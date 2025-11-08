@@ -3,7 +3,7 @@
 }
 
 .dark-mode {
-  background-color: black;
+  background-color: #1a1f3a;
   color: white;
 }
 
@@ -92,12 +92,12 @@ figure figcaption {
 
 ::-webkit-selection {
   color: #fff;
-  background: #2c98f0;
+  background: #3F51B5;
 }
 
 ::selection {
   color: #fff;
-  background: #2c98f0;
+  background: #3F51B5;
 }
 
 #colorlib-page {
@@ -113,7 +113,7 @@ figure figcaption {
   width: 300px;
   position: fixed;
   z-index: 1001;
-  background: linear-gradient(135deg, rgb(255, 221, 153), rgb(249, 191, 63));
+  background: linear-gradient(135deg, rgb(159, 168, 218), rgb(92, 107, 192));
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -128,7 +128,7 @@ figure figcaption {
     -o-transform: translateX(-300px);
     transform: translateX(-300px);
     padding-top: 4em;
-    background-color: #f9bf3f;
+    background-color: #5C6BC0;
     height: -webkit-fill-available;
     left: 0px;
   }
@@ -217,7 +217,7 @@ figure figcaption {
   bottom: 7px;
   left: 0;
   right: 0;
-  background-color: #2c98f0;
+  background-color: #3F51B5;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -330,7 +330,7 @@ body.offcanvas #colorlib-aside {
   -o-transform: translateX(0);
   transform: translateX(0);
   width: 372px;
-  background-color: #f9bf3f;
+  background-color: #5C6BC0;
   z-index: 999;
   position: fixed;
 }
@@ -462,7 +462,7 @@ body.offcanvas .colorlib-nav-toggle {
   position: absolute;
   display: block;
   width: 4px;
-  background: #f9bf3f;
+  background: #5C6BC0;
   top: 20px;
   bottom: 20px;
   margin-left: 29px;
@@ -485,7 +485,7 @@ body.offcanvas .colorlib-nav-toggle {
   display: block;
   width: 40px;
   height: 40px;
-  background: #2c98f0;
+  background: #3F51B5;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -516,7 +516,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
-  background: linear-gradient(135deg, rgb(255, 221, 153), rgb(249, 191, 63));
+  background: linear-gradient(135deg, rgb(159, 168, 218), rgb(92, 107, 192));
   color: #000;
   padding: 1.2em;
   margin-left: 60px;
@@ -875,7 +875,7 @@ span {
 }
 
 :root {
-  --footer-bg: linear-gradient(135deg, rgb(255, 221, 153), rgb(249, 191, 63));
+  --footer-bg: linear-gradient(135deg, rgb(159, 168, 218), rgb(92, 107, 192));
   --color: #000;
   --color-smooth: #000;
   --input-border: #3a456a;
@@ -951,7 +951,7 @@ hr {
   flex: 1 0 48%;
   padding: 10px;
   font-size: 14px;
-  background: linear-gradient(135deg, #ffdd99, #f9bf3f);
+  background: linear-gradient(135deg, #9FA8DA, #5C6BC0);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -990,7 +990,7 @@ strong {
 
 .dark-mode {
   strong {
-    color: #f9bf3f;
+    color: #5C6BC0;
   }
 }
 
@@ -1001,7 +1001,7 @@ strong {
   overflow: hidden;
   transition: transform 0.3s ease;
   padding: 16px;
-  background: linear-gradient(135deg, rgb(255, 221, 153), rgb(249, 191, 63));
+  background: linear-gradient(135deg, rgb(159, 168, 218), rgb(92, 107, 192));
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -1116,7 +1116,7 @@ strong {
   border-radius: 5px;
   padding: 12px;
   font-size: 14px;
-  background: linear-gradient(135deg, #ffdd99, #f9bf3f);
+  background: linear-gradient(135deg, #9FA8DA, #5C6BC0);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 }
@@ -1158,7 +1158,7 @@ strong {
 
 .stat-label {
   font-size: 12px;
-  color: #666;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -1278,7 +1278,7 @@ strong {
 }
 
 .trek-height .badge {
-  background-color: #f9bf3f;
+  background-color: #5C6BC0;
   color: #000;
   border-radius: 20px;
   padding: 5px 12px;
@@ -1314,7 +1314,7 @@ strong {
   }
   
   .home-link:hover {
-	background: #f9bf3f;
+	background: #5C6BC0;
 	color: #000;
 	transform: translateX(-5px);
   }

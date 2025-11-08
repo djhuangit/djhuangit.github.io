@@ -93,7 +93,7 @@ function populateSkills(items, id) {
   const skillsTemplate = html` ${items.map(
     (category) => html`
       <div class="col-md-2 animate-box" style="margin-bottom: 30px; min-width: 185px;">
-        <h3 style="color: #f9bf3f; margin-bottom: 15px; font-size: 16px;">${category.category}</h3>
+        <h3 style="color: #5C6BC0; margin-bottom: 15px; font-size: 16px;">${category.category}</h3>
         <ul style="list-style: none; padding: 0;">
           ${category.items.map(
             (skill) => html`<li class="skill-item" style="margin-bottom: 8px; font-size: 14px;">${skill}</li>`
