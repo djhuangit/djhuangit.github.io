@@ -1,6 +1,6 @@
 const data ={
   "bio": [
-    "Hi, I'm an AI Engineer with experience across computer vision, NLP, time-series and production ML systems. My current focus is on LLM agents and synthetic data generation, where I'm building practical solutions through AI Singapore's intensive programme to unlock ML capabilities where real data is limited or expensive.",
+    "Hi, I'm Huang De Jun (DJ) - an AI Engineer with experience across computer vision, NLP, time-series and production ML systems. My current focus is on LLM agents and synthetic data generation, where I'm building practical solutions through AI Singapore's intensive programme to unlock ML capabilities where real data is limited or expensive.",
     "I bring 9+ years of industrial R&D experience in additive manufacturing, robotics and computer vision, with a PhD in ML/DL applications from NTU Singapore (EDB-IPP programme with Emerson). I thrive in collaborative environments where we can tackle real problems with technology."
   ],
   "skills": [
