@@ -8,20 +8,29 @@ import {
 } from "./user-data/data.js";
 import { html, render } from "https://unpkg.com/lit-html?module";
 
-import { URLs } from "./user-data/urls.js";
+import { URLs, githubUsername } from "./user-data/urls.js";
 
 const { medium, gitConnected, gitRepo } = URLs;
 
 async function fetchBlogsFromMedium(url) {
   try {
     const response = await fetch(url);
-    const { items, feed } = await response.json();
-    document.getElementById("profile-img").src = feed.image;
+    const { items } = await response.json();
     populateBlogs(items, "blogs");
   } catch (error) {
     throw new Error(
       `Error in fetching the blogs from Medium profile: ${error}`
     );
+  }
+}
+
+async function setProfileImage(githubUsername) {
+  try {
+    const response = await fetch(`https://api.github.com/users/${githubUsername}`);
+    const { avatar_url } = await response.json();
+    document.getElementById("profile-img").src = avatar_url;
+  } catch (error) {
+    console.error(`Error fetching GitHub profile image: ${error}`);
   }
 }
 
@@ -325,6 +334,7 @@ populateBio(bio, "bio");
 
 populateSkills(skills, "skills");
 
+setProfileImage(githubUsername);
 fetchBlogsFromMedium(medium);
 fetchReposFromGit(gitRepo);
 fetchGitConnectedData(gitConnected);

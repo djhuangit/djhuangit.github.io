@@ -1,4 +1,4 @@
-# Portfolio Website
+# Portfolio Website - Huang De Jun
 
 A modern, responsive portfolio website built with JavaScript and lit-html templating.
 
@@ -7,8 +7,8 @@ A modern, responsive portfolio website built with JavaScript and lit-html templa
 - 📱 Responsive Design
 - 🚀 Dynamic Content Loading
 - 📊 GitHub Repository Stats
+- 📊 Profile Cards (GitHub, StackOverflow, LeetCode)
 - 📝 Medium Blog Integration
-- 🏔️ Trekking Adventures Section
 - 💼 Work Experience Timeline
 - 🎓 Education History
 - 🔗 Social Media Integration
@@ -25,15 +25,18 @@ A modern, responsive portfolio website built with JavaScript and lit-html templa
 
 ```bash
 # Clone the repository
-git clone https://github.com/vinaysomawat/vinaysomawat.github.io.git
+git clone https://github.com/djhuangit/djhuangit.github.io.git
 
 # Navigate to project directory
-cd vinaysomawat.github.io
+cd djhuangit.github.io
 
 # Open with live server or similar
 python -m http.server 8000
 ```
 
-**If you enjoy this project, please consider [supporting me](https://www.paypal.me/vinaysomawat) to continue developing and maintaining it.**
+## TODO
 
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/vinaysomawat)
+- [ ] Add more profile cards (Kaggle, HuggingFace, etc.)
+- [ ] Customize blog integration or remove if not using Medium
+- [ ] Add custom logo/favicon
+- [ ] Configure or remove Firebase visitor counter
