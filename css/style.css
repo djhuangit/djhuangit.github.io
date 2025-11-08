@@ -350,7 +350,7 @@ body.offcanvas .colorlib-nav-toggle {
 @media screen and (max-width: 878px) {
   .colorlib-narrow-content {
     width: 100%;
-    padding: 0 1em;
+    padding: 70px 1em 0 1em;
   }
 }
 
@@ -621,11 +621,11 @@ body.offcanvas .colorlib-nav-toggle {
 }
 .colorlib-nav-toggle.active i::before,
 .colorlib-nav-toggle.active i::after {
-  background: #000;
+  background: #ffffff;
 }
 .colorlib-nav-toggle.dark.active i::before,
 .colorlib-nav-toggle.dark.active i::after {
-  background: #000;
+  background: #ffffff;
 }
 .colorlib-nav-toggle:hover,
 .colorlib-nav-toggle:focus,
@@ -640,7 +640,7 @@ body.offcanvas .colorlib-nav-toggle {
   zoom: 1;
   width: 30px;
   height: 2px;
-  background-color: #000;
+  background-color: #ffffff;
   font: bold 14px/0.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
@@ -653,7 +653,7 @@ body.offcanvas .colorlib-nav-toggle {
   content: "";
   width: 30px;
   height: 2px;
-  background-color: #000;
+  background-color: #ffffff;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -713,13 +713,13 @@ body.offcanvas .colorlib-nav-toggle {
 
 .colorlib-nav-toggle {
   position: fixed;
-  left: -5px;
-  top: 0px;
+  left: 15px;
+  top: 15px;
   z-index: 9999;
   cursor: pointer;
   opacity: 1;
   visibility: hidden;
-  padding: 20px;
+  padding: 8px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
