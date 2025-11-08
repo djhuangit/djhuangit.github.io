@@ -40,3 +40,7 @@ python -m http.server 8000
 - [ ] Customize blog integration or remove if not using Medium
 - [ ] Add custom logo/favicon
 - [ ] Configure or remove Firebase visitor counter
+
+## Credits
+
+This portfolio is based on the excellent template by [vinaysomawat](https://github.com/vinaysomawat/vinaysomawat.github.io).
