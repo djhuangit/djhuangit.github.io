@@ -195,7 +195,7 @@ figure figcaption {
   margin: 0 0 10px 0;
   padding: 0;
   list-style: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -547,7 +547,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -567,7 +567,7 @@ body.offcanvas .colorlib-nav-toggle {
   .timeline-label
   .timeline-text {
   margin-bottom: 0px;
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
 }
 
@@ -843,7 +843,7 @@ ul {
 
 .publish-date {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 0px;
   font-weight: 600;
 }
@@ -1026,13 +1026,13 @@ strong {
 
 .publish-date {
   margin: 0 0 5px;
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff;
 }
 
 .blog-description {
   margin: 0 0 12px;
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -1059,7 +1059,7 @@ strong {
 }
 
 .repo-description {
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff;
 }
 
@@ -1068,7 +1068,7 @@ strong {
   align-items: center;
   gap: 16px;
   margin-top: 12px;
-  font-size: 12px;
+  font-size: 14px;
   color: #666;
 }
 
@@ -1157,7 +1157,7 @@ strong {
 }
 
 .stat-label {
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff;
   margin: 0;
 }

@@ -96,7 +96,7 @@ function populateSkills(items, id) {
         <h3 style="color: #9FA8DA; margin-bottom: 15px; font-size: 16px;">${category.category}</h3>
         <ul style="list-style: none; padding: 0;">
           ${category.items.map(
-            (skill) => html`<li class="skill-item" style="margin-bottom: 8px; font-size: 14px;">${skill}</li>`
+            (skill) => html`<li class="skill-item" style="margin-bottom: 8px; font-size: 16px;">${skill}</li>`
           )}
         </ul>
       </div>`
