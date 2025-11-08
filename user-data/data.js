@@ -4,34 +4,26 @@ const data ={
     "I bring 9+ years of industrial R&D experience in additive manufacturing, robotics and computer vision, with a PhD in ML/DL applications from NTU Singapore (EDB-IPP programme with Emerson). I thrive in collaborative environments where we can tackle real problems with technology."
   ],
   "skills": [
-    "Python",
-    "SQL",
-    "PyTorch",
-    "Scikit-learn",
-    "Hugging Face",
-    "OpenCV",
-    "LangChain",
-    "Haystack",
-    "Pydantic AI",
-    "vLLM",
-    "RAG Systems",
-    "Diffusion Models",
-    "Docker",
-    "MLflow",
-    "Weights & Biases",
-    "Langfuse",
-    "CI/CD",
-    "Chroma",
-    "PySpark",
-    "Delta Lake",
-    "Google Cloud Platform",
-    "Power BI",
-    "Looker",
-    "Computer Vision",
-    "NLP",
-    "Time Series Analysis",
-    "LLM Agents",
-    "Synthetic Data Generation"
+    {
+      "category": "Programming",
+      "items": ["Python", "SQL"]
+    },
+    {
+      "category": "ML Frameworks",
+      "items": ["PyTorch", "PyTorch Lightning", "Scikit-learn", "Hugging Face", "OpenCV"]
+    },
+    {
+      "category": "LLM/GenAI",
+      "items": ["LangChain", "Haystack", "Pydantic AI", "vLLM", "RAG Systems", "Diffusion Models"]
+    },
+    {
+      "category": "Data & MLOps",
+      "items": ["Docker", "MLflow", "Weights & Biases", "Langfuse", "CI/CD", "Chroma", "PySpark", "Delta Lake"]
+    },
+    {
+      "category": "Cloud & Visualization",
+      "items": ["AWS (Certified ML Associate)", "Google Cloud Platform", "Power BI", "Looker"]
+    }
   ],
   "experience": [
     {
