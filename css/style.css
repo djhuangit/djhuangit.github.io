@@ -386,15 +386,12 @@ body.offcanvas .colorlib-nav-toggle {
   .colorlib-profile,
   .colorlib-projects,
   .colorlib-education,
+  .colorlib-blogs,
   .colorlib-work,
   .colorlib-about,
   .colorlib-contact {
     padding-top: 1em;
     padding-bottom: 0.5em;
-  }
-
-  .colorlib-blogs {
-    display: none;
   }
 
   .profile-cards {
