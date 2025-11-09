@@ -384,3 +384,31 @@ populateExp_Edu(education, "education");
 
 populateLinks(footer, "footer");
 populateContactLinks(contactLinks, 'contact-links');
+
+// Fetch and display last updated date from GitHub
+async function fetchLastUpdatedDate() {
+  try {
+    const repo = 'djhuangit/djhuangit.github.io';
+    const response = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=1`);
+    const commits = await response.json();
+
+    if (commits && commits.length > 0) {
+      const lastCommitDate = new Date(commits[0].commit.author.date);
+      const sixMonthsAgo = new Date();
+      sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+      // Only display if updated within last 6 months
+      if (lastCommitDate >= sixMonthsAgo) {
+        const options = { year: 'numeric', month: 'short' };
+        const formattedDate = lastCommitDate.toLocaleDateString('en-US', options);
+
+        document.getElementById('last-updated-date').textContent = formattedDate;
+        document.getElementById('last-updated').style.display = 'block';
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching last updated date:', error);
+  }
+}
+
+fetchLastUpdatedDate();

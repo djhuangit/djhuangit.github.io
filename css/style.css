@@ -485,7 +485,7 @@ body.offcanvas .colorlib-nav-toggle {
   display: block;
   width: 40px;
   height: 40px;
-  background: #3F51B5;
+  background: #9FA8DA;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -501,7 +501,7 @@ body.offcanvas .colorlib-nav-toggle {
   .timeline-entry
   .timeline-entry-inner
   .timeline-icon.color-2 {
-  background: brown;
+  background: #9FA8DA;
   color: white;
 }
 .timeline-centered
@@ -558,7 +558,7 @@ body.offcanvas .colorlib-nav-toggle {
   .timeline-sublabel {
   font-weight: 600;
   margin: 0px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .timeline-centered
@@ -842,7 +842,7 @@ ul {
 }
 
 .publish-date {
-  color: #ffffff;
+  color: #444;
   font-size: 14px;
   margin-bottom: 0px;
   font-weight: 600;
@@ -932,9 +932,12 @@ footer ul {
 }
 
 .brown-badge {
-  background-color: brown;
-  border: 1px solid #850101;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
 }
 
 hr {
@@ -1018,7 +1021,7 @@ strong {
 
 .blog-heading {
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: black;
   line-height: 1.3em;
@@ -1027,7 +1030,7 @@ strong {
 .publish-date {
   margin: 0 0 5px;
   font-size: 14px;
-  color: #ffffff;
+  color: #444;
 }
 
 .blog-description {
@@ -1053,14 +1056,15 @@ strong {
 }
 
 .repo-heading {
-  margin: 0;
+  margin: 0 0 8px 0;
   font-size: 16px;
   font-weight: bold;
 }
 
 .repo-description {
   font-size: 14px;
-  color: #ffffff;
+  color: #444;
+  margin-bottom: 8px;
 }
 
 .stats-row {
@@ -1158,7 +1162,7 @@ strong {
 
 .stat-label {
   font-size: 14px;
-  color: #ffffff;
+  color: #444;
   margin: 0;
 }
 
@@ -1169,12 +1173,12 @@ strong {
 }
 
 .profile-badge {
-  font-size: 10px;
-  padding: 2px 8px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
   display: inline-block;
   margin-bottom: 4px;
 }
@@ -1207,7 +1211,7 @@ strong {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #666;
+  color: #ffffff;
   margin: 0px;
 }
 
@@ -1231,7 +1235,7 @@ strong {
 .tags-container {
   margin-top: 5px;
   display: flex;
-  gap: 5px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
@@ -1404,6 +1408,20 @@ strong {
   font-size: 12px;
   color: #000;
   font-weight: 500;
+}
+
+/* Last Updated Badge */
+#last-updated {
+  text-align: right;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.last-updated-label {
+  font-weight: 600;
+  margin-right: 6px;
 }
 
 @media (max-width: 768px) {
