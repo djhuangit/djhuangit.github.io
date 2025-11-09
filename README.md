@@ -36,11 +36,9 @@ python -m http.server 8000
 
 ## TODO
 
-- [ ] Add a project showcase section right after about section
 - [ ] Add more profile cards (Kaggle, HuggingFace, etc.)
 - [ ] Customize blog integration or remove if not using Medium
 - [ ] Add custom logo/favicon
-- [ ] Configure or remove Firebase visitor counter
 
 ## Credits
 
