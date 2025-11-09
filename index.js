@@ -1,6 +1,7 @@
 import {
   bio,
   skills,
+  projects,
   education,
   experience,
   footer,
@@ -102,6 +103,39 @@ function populateSkills(items, id) {
       </div>`
   )}`;
   render(skillsTemplate, skillsTag);
+}
+
+function populateProjects(items, id) {
+  const projectsTag = document.getElementById(id);
+
+  const projectsTemplate = html`
+    ${items.map(
+      (project) => html`
+        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+          <div class="project-card">
+            <div class="project-header">
+              <h2 class="project-title">${project.title}</h2>
+              <div class="project-links">
+                <a href="${project.link}" target="_blank" class="project-link-btn">
+                  Live Demo →
+                </a>
+                <a href="${project.githubRepo}" target="_blank" class="project-link-btn">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+            <p class="project-description">${project.description}</p>
+            <div class="project-tech-stack">
+              ${project.techStack.map(
+                (tech) => html`<span class="tech-tag">${tech}</span>`
+              )}
+            </div>
+          </div>
+        </div>
+      `
+    )}
+  `;
+  render(projectsTemplate, projectsTag);
 }
 
 function populateBlogs(items, id) {
@@ -335,6 +369,8 @@ function getBlogDate(publishDate) {
 }
 
 populateBio(bio, "bio");
+
+populateProjects(projects, "projects");
 
 populateSkills(skills, "skills");
 

@@ -110,6 +110,24 @@ const data ={
       "icon": "graduation-cap"
     }
   ],
+  "projects": [
+    {
+      "title": "Synthetic Data Generator",
+      "description": "AI-powered web application that generates realistic synthetic datasets from natural language descriptions. Features configurable row generation (1-10,000 rows), real-time data preview, and CSV download functionality for development and testing purposes.",
+      "techStack": ["Python", "FastAPI", "Claude Sonnet 4.5", "Gradio", "Faker"],
+      "link": "https://data-gen.djhuang.dev",
+      "githubRepo": "https://github.com/djhuangit/Synthetic-Data-Generator-From-User-Prompts",
+      "featured": true
+    },
+    {
+      "title": "Praising Chatbot",
+      "description": "An interactive web-based chatbot designed to provide uplifting, positive responses that help users feel good about themselves and their accomplishments. Features real-time chat interface with usage statistics tracking, session management, and message feedback options.",
+      "techStack": ["Python", "Gradio", "OpenAI API", "Server-Sent Events"],
+      "link": "https://praising-chatbot.djhuang.dev",
+      "githubRepo": "https://github.com/djhuangit/praising_chatbot",
+      "featured": true
+    }
+  ],
   "contactLinks": [
     {
       "label": "Email",
@@ -153,6 +171,8 @@ const data ={
 export const bio = data.bio;
 
 export const skills = data.skills;
+
+export const projects = data.projects;
 
 export const experience = data.experience
 
