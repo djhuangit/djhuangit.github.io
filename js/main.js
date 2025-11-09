@@ -185,8 +185,5 @@ function enableDarkMode() {
 }
 
 function detectDayNightMode() {
-  const hours = new Date().getHours();
-  if (hours <= 6 || hours >= 20) {
-    enableDarkMode();
-  }
+  enableDarkMode();
 }
