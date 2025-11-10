@@ -114,16 +114,16 @@ const data ={
     {
       "title": "Synthetic Data Generator",
       "description": "AI-powered web application that generates realistic synthetic datasets from natural language descriptions. Features configurable row generation (1-10,000 rows), real-time data preview, and CSV download functionality for development and testing purposes.",
-      "techStack": ["Python", "FastAPI", "Claude Sonnet 4.5", "Gradio", "Faker"],
+      "techStack": ["Python", "Claude Sonnet 4.5", "FastAPI", "Gradio", "Faker"],
       "link": "https://data-gen.djhuang.dev",
       "githubRepo": "https://github.com/djhuangit/Synthetic-Data-Generator-From-User-Prompts",
       "featured": true
     },
     {
-      "title": "Praising Chatbot",
+      "title": "CheerUp Bot",
       "description": "An interactive web-based chatbot designed to provide uplifting, positive responses that help users feel good about themselves and their accomplishments. Features real-time chat interface with usage statistics tracking, session management, and message feedback options.",
-      "techStack": ["Python", "Gradio", "OpenAI API", "Server-Sent Events"],
-      "link": "https://praising-chatbot.djhuang.dev",
+      "techStack": ["Python", "OpenAI API", "FastAPI", "Gradio", "Server-Sent Events"],
+      "link": "https://cheerupbot.djhuang.dev/",
       "githubRepo": "https://github.com/djhuangit/praising_chatbot",
       "featured": true
     }
