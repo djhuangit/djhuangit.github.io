@@ -1,6 +1,6 @@
 const data ={
   "bio": [
-    "Hi, I'm Huang De Jun (DJ) - an AI Engineer with experience across computer vision, NLP, time-series and production ML systems. My current focus is on LLM agents and synthetic data generation, where I'm building practical solutions through AI Singapore's intensive programme to unlock ML capabilities where real data is limited or expensive.",
+    "Hi, I'm Huang De Jun (DJ) - an AI Engineer based in Singapore with experience across computer vision, NLP, time-series and production ML systems. My current focus is on LLM agents and synthetic data generation, where I'm building practical solutions through AI Singapore's intensive programme to unlock ML capabilities where real data is limited or expensive.",
     "I bring 9+ years of industrial R&D experience in additive manufacturing, robotics and computer vision, with a PhD in ML/DL applications from NTU Singapore (EDB-IPP programme with Emerson). I thrive in collaborative environments where we can tackle real problems with technology."
   ],
   "skills": [
@@ -33,14 +33,16 @@ const data ={
       "details": [
         "Built synthetic time-series generation using agentic search and diffusion models (MMD: 0.32, JS: 0.21)",
         "Built production RAG system with 40% accuracy improvement using Haystack and Chroma",
-        "Deployed CNN pipeline achieving 92% accuracy; implemented vLLM with 2x throughput"
+        "Deployed CNN pipeline achieving 92% accuracy; implemented vLLM with 2x throughput",
+        "Established AI governance framework aligned with ISO/IEC 42001, 25059, and 29119-11 for data privacy and agent autonomy"
       ],
       "tags": [
         "LLM Agents",
         "Diffusion Models",
         "RAG",
         "Haystack",
-        "vLLM"
+        "vLLM",
+        "AI Ethics"
       ],
       "icon": "brain"
     },
