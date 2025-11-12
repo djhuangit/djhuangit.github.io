@@ -128,6 +128,13 @@ const data ={
       "link": "https://cheerupbot.djhuang.dev/",
       "githubRepo": "https://github.com/djhuangit/praising_chatbot",
       "featured": true
+    },
+    {
+      "title": "Spatter Monitoring System",
+      "description": "Production-grade MLOps pipeline for binary classification of metal 3D printing spatter patterns, achieving 98.38% test accuracy on 600K images. Features automatic device detection (CPU/MPS/GPU), smart checkpoint management, and efficient HDF5 storage with 18.4x compression.",
+      "techStack": ["Python", "PyTorch", "Computer Vision", "Hydra", "HDF5", "OpenCV"],
+      "githubRepo": "https://github.com/djhuangit/spatter_monitoring",
+      "featured": false
     }
   ],
   "contactLinks": [
@@ -164,7 +171,14 @@ const data ={
     {
       "label": "copyright-text",
       "data": [
-        "Built with HTML, CSS, JavaScript"
+        "Built with HTML, CSS, JavaScript",
+        {
+          "text": "This portfolio is based on the excellent template by ",
+          "link": {
+            "text": "vinaysomawat",
+            "url": "https://github.com/vinaysomawat/vinaysomawat.github.io"
+          }
+        }
       ]
     }
   ]

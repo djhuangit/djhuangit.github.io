@@ -116,9 +116,11 @@ function populateProjects(items, id) {
             <div class="project-header">
               <h2 class="project-title">${project.title}</h2>
               <div class="project-links">
-                <a href="${project.link}" target="_blank" class="project-link-btn">
-                  Live Demo →
-                </a>
+                ${project.link ? html`
+                  <a href="${project.link}" target="_blank" class="project-link-btn">
+                    Live Demo →
+                  </a>
+                ` : ''}
                 <a href="${project.githubRepo}" target="_blank" class="project-link-btn">
                   <i class="fa-brands fa-github"></i> GitHub
                 </a>
@@ -294,7 +296,16 @@ function populateLinks(items, id) {
 
   const copyrightTemplate = (item) => html`
     <div class="copyright-text no-print">
-      ${item.data.map((copyright) => html`<p>${copyright}</p>`)}
+      ${item.data.map((copyright) =>
+        typeof copyright === 'string'
+          ? html`<p>${copyright}</p>`
+          : html`<p>
+              ${copyright.text}
+              <a href="${copyright.link.url}" target="_blank" rel="noopener noreferrer">
+                ${copyright.link.text}
+              </a>
+            </p>`
+      )}
     </div>
   `;
 

@@ -1110,6 +1110,16 @@ strong {
   color: #333;
 }
 
+.copyright-text a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.copyright-text a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .profile-card {
   text-decoration: none;
   color: black;
