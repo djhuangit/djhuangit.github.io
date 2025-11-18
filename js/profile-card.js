@@ -113,6 +113,43 @@ function leetcodeCardTemplate(data) {
   `;
 }
 
+function huggingfaceCardTemplate(stats) {
+  const { username, models, datasets, spaces, totalLikes, avatarUrl } = stats;
+
+  const hfUrl = `https://huggingface.co/${username}`;
+
+  return html`
+    <a href="${hfUrl}" target="_blank" class="profile-card">
+      <div class="profile-header">
+        <img
+          class="profile-avatar"
+          src="${avatarUrl}"
+          alt="Hugging Face avatar"
+        />
+        <div>
+          <div class="profile-badge badge-huggingface">Hugging Face</div>
+          <p class="profile-url">${hfUrl}</p>
+        </div>
+      </div>
+      <div class="profile-stats">
+        ${[
+          { label: "MODELS", value: models },
+          { label: "DATASETS", value: datasets },
+          { label: "SPACES", value: spaces },
+          { label: "LIKES", value: totalLikes },
+        ].map(
+          (stat) => html`
+            <div>
+              <p class="stat-label">${stat.label}</p>
+              <p class="stat-value">${stat.value}</p>
+            </div>
+          `
+        )}
+      </div>
+    </a>
+  `;
+}
+
 window.addEventListener("DOMContentLoaded", async () => {
   document.querySelectorAll(".stack-card").forEach(async (el) => {
     const userId = el.getAttribute("user-id");
@@ -134,5 +171,36 @@ window.addEventListener("DOMContentLoaded", async () => {
       `https://leetcode-stats-api.herokuapp.com/${username}`
     );
     render(leetcodeCardTemplate(data), el);
+  });
+
+  document.querySelectorAll(".huggingface-card").forEach(async (el) => {
+    const username = el.getAttribute("username");
+
+    // Fetch models, datasets, and spaces in parallel
+    const [models, datasets, spaces] = await Promise.all([
+      get(`https://huggingface.co/api/models?author=${username}`),
+      get(`https://huggingface.co/api/datasets?author=${username}`),
+      get(`https://huggingface.co/api/spaces?author=${username}`)
+    ]);
+
+    // Calculate total likes across all repositories
+    const totalLikes = [...models, ...datasets, ...spaces].reduce(
+      (sum, repo) => sum + (repo.likes || 0),
+      0
+    );
+
+    // Use Hugging Face avatar URL pattern
+    const avatarUrl = `https://huggingface.co/avatars/${username}.svg`;
+
+    const stats = {
+      username,
+      models: models.length,
+      datasets: datasets.length,
+      spaces: spaces.length,
+      totalLikes,
+      avatarUrl,
+    };
+
+    render(huggingfaceCardTemplate(stats), el);
   });
 });

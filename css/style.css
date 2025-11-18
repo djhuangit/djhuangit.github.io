@@ -1208,6 +1208,12 @@ strong {
   color: #111;
 }
 
+.badge-huggingface {
+  background-color: #000;
+  border: 1px solid #333;
+  color: #fff;
+}
+
 .profile-url {
   font-size: 11px;
   color: #333;
