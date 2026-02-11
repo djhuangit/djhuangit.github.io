@@ -6,6 +6,7 @@ import {
   experience,
   footer,
   contactLinks,
+  hackathons,
 } from "./user-data/data.js";
 import { html, render } from "https://unpkg.com/lit-html?module";
 
@@ -138,6 +139,53 @@ function populateProjects(items, id) {
     )}
   `;
   render(projectsTemplate, projectsTag);
+}
+
+function populateHackathons(items, id) {
+  const container = document.getElementById(id);
+
+  const hackathonsTemplate = html`
+    ${items.map(
+      (item) => html`
+        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+          <div class="project-card">
+            <div class="project-header">
+              <h2 class="project-title">${item.title}</h2>
+              <div class="project-links">
+                ${item.video ? html`
+                  <a href="${item.video}" target="_blank" class="project-link-btn">
+                    <i class="fa-brands fa-youtube"></i> Demo Video
+                  </a>
+                ` : ''}
+                ${item.link ? html`
+                  <a href="${item.link}" target="_blank" class="project-link-btn">
+                    Live Demo →
+                  </a>
+                ` : ''}
+                ${item.githubRepo ? html`
+                  <a href="${item.githubRepo}" target="_blank" class="project-link-btn">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                ` : ''}
+              </div>
+            </div>
+            <p class="project-description" style="margin-bottom: 4px;">
+              ${item.subtitle} · ${item.duration}
+            </p>
+            <p class="project-description">
+              ${item.details.filter(d => !d.startsWith("Teammate")).join(". ")}
+            </p>
+            <div class="project-tech-stack">
+              ${item.tags.map(
+                (tag) => html`<span class="tech-tag">${tag}</span>`
+              )}
+            </div>
+          </div>
+        </div>
+      `
+    )}
+  `;
+  render(hackathonsTemplate, container);
 }
 
 function populateBlogs(items, id) {
@@ -392,6 +440,7 @@ fetchGitConnectedData(gitConnected);
 
 populateExp_Edu(experience, "experience");
 populateExp_Edu(education, "education");
+populateHackathons(hackathons, "hackathons");
 
 populateLinks(footer, "footer");
 populateContactLinks(contactLinks, 'contact-links');

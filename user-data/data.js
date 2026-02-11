@@ -137,6 +137,36 @@ const data ={
       "featured": false
     }
   ],
+  "hackathons": [
+    {
+      "title": "Rabbit Hole",
+      "duration": "Jan 2026",
+      "subtitle": "Google DeepMind Gemini 3 Hackathon — Honourable Mention",
+      "details": [
+        "AI-powered PDF reader that embeds interactive AI directly into your document",
+        "Highlight text to ask questions, draw around equations for annotated explanations, hover references to explore linked papers, and track explorations via a graph-based rabbit holes map",
+        "Teammate: Shaik Asaad"
+      ],
+      "tags": ["Gemini 3.0", "Nano Banana Pro", "Long Context Window"],
+      "icon": "trophy",
+      "video": "https://www.youtube.com/watch?v=cIfQqVJnJlM",
+      "githubRepo": "https://github.com/asaadkhaja99/rabbit-hole"
+    },
+    {
+      "title": "Scrum & Tell",
+      "duration": "Dec 2025",
+      "subtitle": "ElevenLabs Worldwide Hackathon — Winner (Clerk Sponsor Track)",
+      "details": [
+        "AI-powered stand-up meeting facilitator that runs your daily sync",
+        "Upload sprint context, and the AI avatar prompts each team member, captures blockers and action items in real-time, and generates a shareable summary",
+        "Teammate: Brian Isaac Kam"
+      ],
+      "tags": ["Next.js 14", "Convex", "Clerk", "ElevenLabs TTS", "GPT-4o-mini"],
+      "icon": "trophy",
+      "link": "https://scrum-and-tell.vercel.app/",
+      "githubRepo": "https://github.com/djhuangit/scrum_and_tell"
+    }
+  ],
   "contactLinks": [
     {
       "label": "Email",
@@ -193,6 +223,8 @@ export const projects = data.projects;
 export const experience = data.experience
 
 export const education = data.education
+
+export const hackathons = data.hackathons
 
 export const contactLinks = data.contactLinks
 
